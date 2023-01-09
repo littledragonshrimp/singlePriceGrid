@@ -78,7 +78,7 @@
   font-weight: 700;
 }
 .right p {
-  width: 60%;
+  width: 80%;
   color: hsl(204deg, 43%, 93%);
 }
 
@@ -115,7 +115,7 @@
     align-items: center;
     border-radius: 6px;
     height: 10rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
   .container2 h1 {
     font-size: 20px;
@@ -133,6 +133,7 @@
     margin-top: 0;
   }
   .container2 .left p, .container2 .right p {
+    font-size: 14px;
     max-width: 80%;
   }
   .container2 .left .month, .container2 .right .month {
@@ -154,7 +155,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.5rem;
     background-color: hsl(71deg, 73%, 54%);
     border-radius: 6px;
     border-style: none;
