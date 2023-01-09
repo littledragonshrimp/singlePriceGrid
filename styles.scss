@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@300;400;700;800&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Outfit:wght@300;400;600&family=Roboto:wght@700&display=swap');
+//style colors
+$cyan: hsl(179, 62%, 43%);
+$lime: hsl(71, 73%, 54%);
+$gray: hsl(204, 43%, 93%);
+$grayblue: hsl(218, 22%, 67%);
+
+*{
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+
+.container, .container2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading{
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    line-height: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    h1{
+        color: $cyan;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    h2{
+        color: $lime;
+    }
+    p{
+        color: $grayblue;
+        max-width: 80%;
+    }
+}
+
+.left{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: 100%;
+
+    line-height: 1.5rem;
+    background-color: $cyan;
+    color: white;
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    button{
+        display: block;
+        background-color: $lime;
+        border-radius: 6px;
+        border-style: none;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        height: 30%;
+        width: 80%;
+        box-shadow: 1px 1px 5px rgb(79, 60, 60);
+    
+        color: white;
+        font-weight: 700;
+    }
+    .bold{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+.right{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+    height: 100%;
+
+    line-height: 1.5rem;
+    background-color: $cyan;
+    color: white;
+    h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    p{
+        width: 60%;
+        color: $gray;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 800px){
+    .container{
+        margin: auto;
+        margin-top: 4rem;
+        border-radius: 6px;
+        background-color: $gray;
+        max-width: 60%;
+    }
+    
+    .heading{
+        padding: 3rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        height: 100%;
+        line-height: 2rem;
+       
+        h1{
+            color: $cyan;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        h2{
+            color: $lime;
+        }
+        p{
+            color: $grayblue;
+            max-width: 80%;
+        }
+    }
+    
+    .container2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        height: 10rem;
+        padding-bottom: 3rem;
+        h1{
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: -1rem;
+        }
+        .left, .right{
+        position: relative;
+        width: 100%;
+        height: 100%;
+         flex: 1;
+         background-color: $cyan;
+         color: white;
+         padding-bottom: 4rem;
+         margin-top: 0;
+         p{
+            max-width: 80%;
+         }
+         .month{
+            color: $gray;
+            margin-left: 3px;
+         }
+        }
+        .left{
+            border-bottom-left-radius: 8px;
+        }
+        .right{
+            background-color: adjust-hue($color: $cyan, $degrees: 1);
+            opacity: .8;
+            border-bottom-right-radius: 8px;
+            p{
+                color: $gray;
+            }
+        }
+    }
+    // @media only screen and (max-width: 915px) {
+    //     .heading p{
+    //         font-size: 13px;
+    //         line-height: 1.2rem;
+    //     .heading h1{
+    //             font-size: 10px;
+    //     }
+    //     .card p{
+    //     max-width: 100%;
+    //     font-size: 10px;
+    //     }
+    //     h1{
+    //         font-size: 10px;
+    //     }
+    
+    //     .bold{
+    //         font-size: .5rem;
+    //     }
+    //     }
+    // }
+    
+    button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .5rem;
+        background-color: $lime;
+        border-radius: 6px;
+        border-style: none;
+        height: 30%;
+        width: 100%;
+        box-shadow: 1px 1px 5px rgb(79, 60, 60);
+        text-align: center;
+        color: white;
+        font-weight: 700;
+     
+    }
+    
+    .card{
+        padding: 3rem;
+    }
+    
+    .cost{
+        color: $gray;
+    .bold{
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    }
+    
+    footer{
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        min-width: 500px;
+        max-width: 700px;
+        transform: translateX(-40%);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
