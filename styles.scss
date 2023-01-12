@@ -15,11 +15,76 @@ body{
     padding: 0;
 }
 
-// .container{
-//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr;
-//     background-color: white;
-// }
+.container{
+    display: grid;
+    grid-template-columns: 2rem repeat(3, 1fr) 2rem;
+    grid-template-rows: 2rem repeat(4, 1fr) 2rem;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.heading{
+    background-color: white;
+    grid-area: 2 / 2 / 2 / 5;
+    border-radius: .6rem;
+    .heading-content{
+        margin:3rem;
+    }
+}
+    .heading-content{
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 3.5rem;
+        color: $grayblue;
+        h1{
+            color: $cyan;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        h3{
+            color: $lime;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+
+.left{
+    background-color: $cyan;
+    grid-area: 3/2/3/5;
+    color: white;
+    h2{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+    p{
+        margin-bottom: 4rem;
+        font-size: 1rem;
+    }
+    .sign{
+        
+        text-align: center;
+        padding: 1rem 40% 1rem 40%;
+        background-color: $lime;
+        border-radius: .5rem;
+        text-decoration: none;
+       
+        color: white;
+        font-weight: 700;
+    }
+}
+.right{
+    background-color: hsl(179, 62%, 63%);
+    grid-area: 4/2/5/5;
+    color: white;
+    line-height: 1.5rem;
+    h3{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+}
 
 // .container, .container2{
 //     display: flex;
@@ -117,7 +182,7 @@ body{
     .container{
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
     }
@@ -129,46 +194,32 @@ body{
         border-top-right-radius: 1rem;
     }
 
-    .heading-content{
-        margin-left: 3rem;
-        margin-top: 3.5rem;
-        color: $grayblue;
-        h1{
-            color: $cyan;
-            font-weight: 700;
-            font-size: 2rem;
-        }
-        h3{
-            color: $lime;
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
-    }
+
     .left{
-        grid-area: 3 / 2 / 3/ 4;
+        grid-area: 3 / 2 / 3 / 4;
         background-color: $cyan;
         border-bottom-left-radius: 1rem;
-
-        h2{
-            color: white;
-            font-size: 1.2rem;
-        }
         .sign{
-            
+        
             text-align: center;
-            padding: 1rem 4rem 1rem 4rem;
-            background-color: $lime;
+            padding: 1rem 3rem 1rem 3rem;
             border-radius: 1rem;
             text-decoration: none;
            
             color: white;
             font-weight: 700;
         }
+   
     }
     .right{
         grid-area: 3 / 4 / 3 / 6;
-        background-color: $cyan;
+        
         border-bottom-right-radius: 1rem;
+        h3{
+            font-size: 1.2rem;
+            margin: 0;
+            margin-bottom: 1rem;
+        }
     }
   
 
@@ -212,7 +263,6 @@ body{
         text-align: center;
         color: white;
         font-weight: 700;
-     
     }
     
     .card{
@@ -220,11 +270,16 @@ body{
     }
     
     .cost{
-        color: $gray;
     .bold{
         font-weight: 700;
         font-size: 30px;
         color: white;
+        vertical-align: middle;
+    }
+    .month{
+        margin-left: .5rem;
+        color: $gray;
+        vertical-align: center;
     }
     }
     
